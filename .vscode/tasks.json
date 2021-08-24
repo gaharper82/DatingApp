@@ -37,6 +37,37 @@
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "dotnet watch run on startup",
+            "command": "cd API && dotnet watch run",
+            "type": "shell",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+              },
+              "runOptions": { "runOn": "folderOpen" }
+        },
+        {
+            "label": "ng serve on startup",
+            "command": "cd client\\src\\app && ng serve",
+            "type": "shell",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+              },
+              "runOptions": { "runOn": "folderOpen" }
+        },
+        {
+            "label": "client terminal on startup",
+            "command": "cd client\\src\\app",
+            "type": "shell",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+              },
+              "runOptions": { "runOn": "folderOpen" }
         }
+
     ]
 }
